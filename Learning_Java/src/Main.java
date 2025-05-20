@@ -1,34 +1,26 @@
+
+import java.sql.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        String[] names = {"Rene","Raul","Ismary","Ruben"};
+        String[][][] books = new String[2][2][2];
+        books[0][0][0] = "Padre Rico";
+        books[0][0][1] = "La Asistenta";
+        books[0][1][0] = "La Grieta";
+        books[0][1][1] = "Dexter en la Ocuridad";
 
-        System.out.println("ID\tNAMES");
-        byte contador = 1;
-        for (String name : names) {
+        System.out.println(Arrays.deepToString(books));
 
-            System.out.printf("%d\t%s\n",contador,name);
-            contador++;
-
-        };
-        System.out.println("-".repeat(50));
-
-        byte conten = 10;
-        while (conten > names.length) {
-            System.out.printf("%d Renecito\n", conten);
-            conten--;
-        }
-
-        for (byte i = 0; i < 10; i++){
-            System.out.println(Arrays.toString(names));
-            i += 2;
-        }
-
-        System.out.printf("El nombre del alumno es: %s", names[1]);
-
+        Scanner input =  new Scanner(System.in);
+        System.out.println("Inserte your age:");
+        float age = input.nextFloat();
+        System.out.printf("The name is %f", age);
+        
     }
 }
+

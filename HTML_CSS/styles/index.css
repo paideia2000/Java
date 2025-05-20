@@ -1,0 +1,63 @@
+
+.style-box{
+    background: black;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+body{
+    background-color: rgb(205, 205, 204);
+}
+
+h1{
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+    padding-bottom: 50px;
+}
+h1:hover{
+    
+    color: blueviolet;
+    transform: translateY(-10%) scale(1.1); /* Crece un 10% */
+    filter: drop-shadow(0 0 5px rgb(253, 252, 252)); /* Efecto de brillo */
+    
+}
+p{
+    font-size: 25px;
+    text-align: center;
+    color: blueviolet;
+    padding-top: 90px;
+}
+p:hover{
+    color: yellow;
+    transform: translateY(-10%) scale(1.1); /* Crece un 10% */
+    filter: drop-shadow(0 0 5px rgb(253, 252, 252)); /* Efecto de brillo */
+}
+
+img{
+    margin-left: 300px;
+    width: 20%;
+}
+
+.style-nav{
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    img{
+    height: 35px;
+    width: 35px;
+    }
+}
+
+.style-nav a:hover{
+    transform: translateY(-10%) scale(1.1);
+    filter: drop-shadow(0 0 5px rgb(253, 252, 252));
+}
+
+video{
+    padding-top: 70px;
+    margin-left: 100px;
+}
