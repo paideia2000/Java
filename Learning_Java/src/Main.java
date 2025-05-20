@@ -1,15 +1,34 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        String[] names = {"Rene","Raul","Ismary","Ruben"};
+
+        System.out.println("ID\tNAMES");
+        byte contador = 1;
+        for (String name : names) {
+
+            System.out.printf("%d\t%s\n",contador,name);
+            contador++;
+
+        };
+        System.out.println("-".repeat(50));
+
+        byte conten = 10;
+        while (conten > names.length) {
+            System.out.printf("%d Renecito\n", conten);
+            conten--;
         }
+
+        for (byte i = 0; i < 10; i++){
+            System.out.println(Arrays.toString(names));
+            i += 2;
+        }
+
+        System.out.printf("El nombre del alumno es: %s", names[1]);
+
     }
 }
