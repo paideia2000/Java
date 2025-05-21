@@ -8,7 +8,7 @@ h1{
     background-color: orange;
     padding-top: 20px;
     margin-top: 50px;
-    border: solid black;
+    border: 3px solid black;
 
 }
 
@@ -16,37 +16,46 @@ h1{
     background-color: blue;
     margin: auto;
     height: 100px;
-    border: solid black;
-
-
-
+    border: 3px solid black;
+    margin-bottom: 20px;
+    width: 95%;
 
 }
 
 .second-div{
     background-color: green;
+    margin: auto;
     height: 100px;
-    border: dashed black;
-
+    border: 3px dashed black;
+    margin-bottom: 20px;
+    width: 95%;
 
 }
 
 .three-div{
     background-color: violet;
+    margin: auto;
     height: 100px;
-    border: groove black;
-
+    border: 3px groove black;
+    margin-bottom: 20px;
+    width: 95%;
 }
 
 .four-div{
     color: White;
+    margin: auto;
     background-color: black;
-    border: dashed white;
+    border: 3px dashed white;
     height: 100px;
+    margin-bottom: 20px;
+    width: 95%;
 }
 
 .five-div{
     background-color: greenyellow;
+    margin: auto;
     color: white;
-    border: double black;
+    border: 3px double black;
+    margin-bottom: 20px;
+    width: 95%;
 }
