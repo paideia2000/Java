@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.father-div{
+    background-color: orange;
+    padding-top: 20px;
+    margin-top: 50px;
+    border: solid black;
+
+}
+
+.first-div{
+    background-color: blue;
+    margin: auto;
+    height: 100px;
+    border: solid black;
+
+
+
+
+}
+
+.second-div{
+    background-color: green;
+    height: 100px;
+    border: dashed black;
+
+
+}
+
+.three-div{
+    background-color: violet;
+    height: 100px;
+    border: groove black;
+
+}
+
+.four-div{
+    color: White;
+    background-color: black;
+    border: dashed white;
+    height: 100px;
+}
+
+.five-div{
+    background-color: greenyellow;
+    color: white;
+    border: double black;
+}
