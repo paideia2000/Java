@@ -1,0 +1,18 @@
+.first-div{
+    background-image: url(https://pablomonteserin.com/wp-content/uploads/2020/05/bg.jpg);
+    display: flex;
+    width: 750px;
+    height: 571px;
+    margin: auto;
+    margin-top: 100px;
+    p{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+}
+
+.test{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+}

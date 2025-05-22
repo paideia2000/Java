@@ -1,0 +1,22 @@
+.container{
+    background-image: url(https://pablomonteserin.com/wp-content/uploads/2020/06/panteon.jpg);
+    width: 722px;
+    height: 480px;
+    margin: auto;
+
+}
+
+.colunm{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    margin-left: 10px;
+    gap: 40px;
+
+}
+.text{
+    overflow: auto;
+    height: 150px;
+    width: 100px;
+    
+}

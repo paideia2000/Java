@@ -1,0 +1,59 @@
+.father-div{
+    width: 1050px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+h5{
+    width: 100px;
+}
+
+.first-div{
+    background-color: gray;
+    color: black;
+}
+
+.second-div{
+    background-color: rgb(208, 206, 206);
+    color: black;
+    text-align: right;
+}
+
+.three-div{
+    /* align-items hace que se tome el tamaño en este caso el envoltorio del div tomara el height las columnas */
+    align-items: start;
+    display: flex;
+}
+
+.four-div{
+
+    background-color: blueviolet;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-right: 3px dashed black;
+    border-left: 3px dashed black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+}
+
+.five-div{
+    background-color: gray;
+    justify-content: right;
+    h4{
+        text-align: right;
+    }
+}
+
+.six-div{
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
