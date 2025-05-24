@@ -1,32 +1,51 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
+        Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
 
-        int amountry = 0;
-        while (amountry < 3) {
-            System.out.print("\nEnter your age: ");
+        double worked_hours = 0;
+        double pay_for_hours = 0;
 
-            if (input.hasNextInt()){
-                int age = input.nextInt();
-                System.out.printf("\nYour age is '%d' \n", age);
-                break;
-            } else if (input.hasNextDouble()) {
-                double invalid_value = input.nextDouble();
-                System.out.printf("\nThe age must be a integer number, not decimal '%.1f'\n", invalid_value);
-                amountry++;
-            }else {
+        do {
+
+            System.out.print("Insert the numbers of the hours worked: ");
+            if (!input.hasNextDouble()) {
+                System.out.println("\nERROR: You must enter a number.\n");
                 input.nextLine();
-                System.out.println("\nERROR: Try Again please.");
-                amountry++;
-            }
+                continue;
 
-        }
-        System.out.print("\nLoop Closed.\n");
+            } else {
+                worked_hours = input.nextDouble();
+                System.out.println("Number added succesfully.");
+                input.nextLine();
+                break;
+            }
+        } while (true);
+
+        do {
+            System.out.print("\nEnter the pay for hours: ");
+            String userImput = input.nextLine();
+
+            if (userImput.matches("[A-Za-z ]+")) {
+                System.out.println("\nERROR: You bust enter a number.\n");
+                continue;
+            }
+            try{
+                pay_for_hours = Double.parseDouble(userImput);
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("\nERROR: Number format invalid. Try Again.");
+                }
+
+            } while (true);
+
+        double salary = (worked_hours * 4) * pay_for_hours;
+        System.out.printf("Your salary is %.2f", salary );
         input.close();
     }
 }
