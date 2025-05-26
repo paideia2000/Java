@@ -15,4 +15,8 @@
     border: 3px solid black;
     border-radius: 10px;
     background-color: aqua;
+    display: flex;
+    color: black;
+    justify-content: center;
+    gap: 50px;
 }

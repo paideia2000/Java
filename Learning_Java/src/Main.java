@@ -1,54 +1,54 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
+
         Scanner input = new Scanner(System.in);
 
-        double worked_hours = 0;
-        double pay_for_hours = 0;
+        final int weightClown = 112;
+        final int weightDolls = 75;
 
-        do {
+        int amountClown;
+        int amountDolls;
 
-            System.out.print("Insert the numbers of the hours worked: ");
-            if (!input.hasNextDouble()) {
-                System.out.println("\nERROR: You must enter a number.\n");
+        while (true) {
+            System.out.print("\nEnter the numbers of clown sell: ");
+            if (input.hasNextInt()) {
+                amountClown = input.nextInt();
                 input.nextLine();
-                continue;
-
+                break;
             } else {
-                worked_hours = input.nextDouble();
-                System.out.println("Number added succesfully.");
+                System.out.println("ERROR: You must insert an integer.");
                 input.nextLine();
-                break;
             }
-        } while (true);
+        }
 
-        do {
-            System.out.print("\nEnter the pay for hours: ");
-            String userImput = input.nextLine();
-
-            if (userImput.matches("[A-Za-z ]+")) {
-                System.out.println("\nERROR: You bust enter a number.\n");
-                continue;
-            }
-            try{
-                pay_for_hours = Double.parseDouble(userImput);
+        while (true) {
+            System.out.print("\nEnter the number of the dolls sell: ");
+            if (input.hasNextInt()) {
+                amountDolls = input.nextInt();
                 break;
-            } catch (NumberFormatException e) {
-                System.out.println("\nERROR: Number format invalid. Try Again.");
-                }
+            } else {
+                System.out.println("ERROR: You must insert an integer.");
+                input.nextLine();
+            }
+        }
 
-            } while (true);
+        try {
+            double totalweight = (weightClown * amountClown) + (weightDolls * amountDolls);
 
-        double salary = (worked_hours * 4) * pay_for_hours;
-        System.out.printf("Your salary is %.2f", salary );
-        input.close();
+            System.out.printf("The total weight oh the package is: %.2f lb", totalweight);
+        } catch (Exception e) {
+            System.err.println("An error ocurred: " + e.getMessage());;
+        }
+
     }
 }
+
+
+
 
 
 

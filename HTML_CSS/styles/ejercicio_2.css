@@ -1,0 +1,63 @@
+.container{
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 1400px;
+    background-color: rgb(128, 126, 126);
+    
+    h1{
+        color: blueviolet;
+        font-size: 70px;
+        text-align: right;
+        letter-spacing: 50px;
+        
+    }
+    p{
+        font-size: 30px;
+        margin: 30px;
+    }
+}
+
+.wrapper{
+    text-align: left;
+    background-color: rgb(2, 99, 2);
+    font-size: 30px;
+    margin: 30px;
+}
+
+.first-image{
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+
+.second-image{
+    display: flex;
+    margin-left: 50px;
+    h2{
+        background-color: rgb(2, 99, 2);
+        font-size: 50px;
+        margin: 0;
+        margin-right: 20px;
+    }
+    p{
+        display: block;
+        margin: 30px;
+        
+    }
+    
+}
+
+.third-image{
+        img{
+            float: right;
+        }
+}
+
+.wrapper-2{
+    text-align: end;
+    margin-left: 30px;
+    background-color: rgb(2, 99, 2);
+    font-size: 30px;
+}
