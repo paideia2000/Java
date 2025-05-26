@@ -1,8 +1,18 @@
+
 .container{
+    background-color: gray;
+}
+
+.container-h1{
+    color: aqua;
+    text-align: center;   
+    padding-top: 15px;
+}
+
+.container-df{
     border: 3px solid black;
     border-radius: 3px;
-    
-    background-color: aqua;
+    background-color: gray;
     margin: auto;
     display: flex;
     overflow: hidden;
@@ -12,6 +22,54 @@
 .box{
     border: 3px dashed black;
     border-radius: 3px;
-    margin: 15px;
-    padding: 15px;
+    padding-top: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    p:first-of-type:first-letter{
+	font-size: 3em
+    }
+    p:first-of-type:first-letter{
+        color: blueviolet;
+    }
+}
+
+
+.multiple-background  {
+    padding-top: 100px;
+    div{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background: url(https://pablomonteserin.com/res/html5/ex/img/mundo.svg),
+    url(https://pablomonteserin.com/res/html5/ex/img/tijeras.svg);
+    background-size: 100% 100%, auto auto;
+    }
+}
+
+
+.gradient{
+    h1{
+        text-align: center;
+    }
+    background: linear-gradient(to bottom, #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+}
+
+
+.repeat div {
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    background: url(https://pablomonteserin.com/wp-content/uploads/2022/02/fondo.png),
+    url(https://pablomonteserin.com/wp-content/uploads/2022/02/fondo.png);
+}
+
+.separat{
+
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background: url(https://pablomonteserin.com/res/html5/ex/back2/html-left.png) no-repeat center left, 
+    url(https://pablomonteserin.com/res/html5/ex/back2/html-right.png) no-repeat right;
 }

@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: minefont;
+    src: url(/HTML_CSS/images/fuente.ttf);
+}
+
+.shadow{
+    width: 500px;
+    margin: auto;
+    border: 2px, solid black;
+    border-radius: 20px 0px 0px 20px;
+    h1{
+        font-family: minefont;
+        text-align: center;
+        text-shadow: 90px 30px 3px red,
+                    -90px -30px 3px blue, 
+                    -90px 30px 3px yellow,
+                    90px -30px 3px green;
+        transition: 0.7s;
+        
+    }
+    h1:hover{
+        text-shadow: -70px -30px 3px red,
+                    70px 30px 3px blue, 
+                    70px -30px 3px yellow,
+                    -70px 30px 3px green;
+    }
+}
