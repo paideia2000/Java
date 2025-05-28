@@ -1,0 +1,22 @@
+.container{
+
+    h1{
+        text-align: center;
+        color: blueviolet;
+
+    }
+
+    h1 .capaflotante{
+		position: absolute;
+		display: none;
+        color: black;
+        
+    }
+
+    h1:hover{
+        .capaflotante{
+            display: block;
+
+        }
+    }
+}

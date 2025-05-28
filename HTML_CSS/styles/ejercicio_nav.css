@@ -1,0 +1,30 @@
+.navbar-menu{
+    margin-top: 50px;
+    padding: 15px;
+
+
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        text-shadow: 3px 3px 3px white;
+    }
+    a{ 
+        display: block;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        transition: 1.0s;
+        border: 3px solid red;
+        border-radius: 10px;
+        padding: 20px;
+        background-image: url(https://pablomonteserin.com/wp-content/uploads/2024/02/indiana.png),
+            linear-gradient(rgb(2, 117, 2), rgb(2, 179, 2), rgb(172, 5, 5), rgb(236, 4, 4));
+        &:hover{
+            background-image: url(https://pablomonteserin.com/wp-content/uploads/2024/02/indiana.png), 
+                linear-gradient(rgb(2, 117, 2), rgb(2, 179, 2), rgb(172, 5, 5), rgb(236, 4, 4));
+            background-position: -50px -70px;
+        }
+    }
+}

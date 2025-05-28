@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: minefont;
+    font-family: myfont;
     src: url(/HTML_CSS/images/fuente.ttf);
 }
 
@@ -10,11 +10,11 @@
     border: 2px, solid black;
     border-radius: 20px 0px 0px 20px;
     h1{
-        font-family: minefont;
+        font-family: myfont;
         text-align: center;
-        text-shadow: 90px 30px 3px red,
-                    -90px -30px 3px blue, 
-                    -90px 30px 3px yellow,
+        text-shadow: 90px 30px 5px red,
+                    -90px -30px 1px blue, 
+                    -90px 30px 10px yellow,
                     90px -30px 3px green;
         transition: 0.7s;
         

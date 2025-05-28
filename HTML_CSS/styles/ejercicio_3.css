@@ -57,6 +57,7 @@
 
 
 .repeat div {
+
     margin: auto;
     width: 500px;
     height: 600px;
@@ -64,12 +65,11 @@
     url(https://pablomonteserin.com/wp-content/uploads/2022/02/fondo.png);
 }
 
-.separat{
-
+.separat-image{
     margin: auto;
     height: 400px;
     width: 400px;
-    border: 1px solid black;
+    border: 3px solid black;
     background: url(https://pablomonteserin.com/res/html5/ex/back2/html-left.png) no-repeat center left, 
     url(https://pablomonteserin.com/res/html5/ex/back2/html-right.png) no-repeat right;
 }
