@@ -1,0 +1,99 @@
+body{
+    background-image: url(/HTML_CSS/images/image_first_web/bg.gif);
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+    .navbar-a{
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-left: 20px;
+        padding: 20px;
+        transition: 0.7s;
+        
+    }
+    .navbar-a:hover{
+        
+        background-color: blueviolet;
+        border-radius: 10px;
+        
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 30px;
+        font-size: 20px;
+        a{
+            text-decoration: none;
+            padding: 20px;
+            color: black;
+            transition: 0.7s;
+        }
+        a:hover{
+            background-color: red;
+            border-radius: 10px;
+        }
+    }
+}
+
+.slider-img{
+    width: 100%;
+}
+
+.navbar-down{
+    display: flex;
+    justify-content: space-between;
+    .nav-down{
+        ul{
+            display: flex;
+            gap: 30px;
+        }
+        
+    }
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    
+    
+    .box{
+        margin: 30px;
+        border: 3px solid black;
+        border-radius: 10px;
+        
+
+        h2{
+            margin: 10px;
+            font-size: 30px;
+        }
+        img{
+            width: 80%;
+            margin: 10px;
+        }
+        p{
+            width: 80%;
+            margin: 10px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+.container{
+    border: 3px dashed black;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+
+}
+
+.grip{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap: 20px;
+    margin: 40px;
+    .box{
+        p{
+            width: 150px;
+        }
+        img{
+            width: 70px;
+        }
+}
+}

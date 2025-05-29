@@ -24,6 +24,7 @@
         &:hover{
             background-image: url(https://pablomonteserin.com/wp-content/uploads/2024/02/indiana.png), 
                 linear-gradient(rgb(2, 117, 2), rgb(2, 179, 2), rgb(172, 5, 5), rgb(236, 4, 4));
+            
             background-position: -50px -70px;
         }
     }
