@@ -1,0 +1,137 @@
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.wrapper-1{
+
+    img{
+        width: 100%;
+    }
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(30, 127, 108, 0.7);
+    justify-content: center;
+    margin: 0;
+    
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 140px;
+        li a{
+            color: white;
+            display: block;
+            padding: 30px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        li:hover a{
+            background-color: rgba(212, 218, 217, 0.357);
+        }
+    }
+    
+    
+}
+
+.wrapper-h1{
+
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    h1{
+        margin: 0;
+        padding-top: 200px;
+        font-size: 80px;
+    }
+    p{
+        margin: 0;
+        padding-bottom: 200px;
+    }
+}
+
+.wrapper-row{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-evenly;
+    .wrapper-content{
+        width: 40%;
+        h3{
+            font-size: 30px;
+        }
+    }
+    .wrapper-navbar{
+        h3{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            li{
+                padding: 10px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.navbar-down-row{
+    display: flex;
+    background-color: black;
+    h3{
+        color: white;
+        font-size: 40px;
+    }
+    a{
+        color: aliceblue;
+    }
+    p{
+        margin: auto;
+        width: 40%;
+        color: white;
+    }
+    .flex-1{
+        flex: 1;
+        text-align: center;
+        .flex-image{
+            padding-top: 20px;
+            width: 200px;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+            img{
+                margin: 10px;
+                max-width: 50px;
+            }
+        }
+        .flex-image a:hover{
+            animation: rotate 1s infinite linear;
+        }
+
+    }
+}
+
+
+
+
+.made-be{
+    background-color: rgb(2, 116, 2);
+    text-align: center;
+    padding: 100px;
+    margin: 0;
+
+}
