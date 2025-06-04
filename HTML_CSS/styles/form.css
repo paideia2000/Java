@@ -1,0 +1,66 @@
+.container{
+        .form-1{
+            label{
+                display: inline-block;
+                width: 200px;
+                margin: 20px;
+            }
+        .button{
+            margin-left: 235px;
+        }   
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+.form-2{
+    border: 3px solid black;
+    margin: auto;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 100px;
+    .edit-checkbox{
+        display: none;
+    }
+    label{
+        color: black;
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+    }
+    input{
+        border: 3px solid black;
+    }
+    button{
+        width: 300px;
+        margin-bottom: 20px;
+        
+    }
+}
+
+input[required] {
+    background-color: red;
+}
+
+input:not([required]){
+    background-color: greenyellow;
+}
+
+.check-box{
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"] + label{
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        background: url(https://pablomonteserin.com/res/html5/ex/checkbox-personalizado/check_radio_sheet.png);
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked + label {
+        background: url(https://pablomonteserin.com/res/html5/ex/checkbox-personalizado/check_radio_sheet.png) -19px
+        top;
+}
+}

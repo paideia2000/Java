@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="form-1">
+
+            <form action="">
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input id="name" placeholder="Insert your name" type="text" pattern="[A-Za-z]+$" required>
+                </div>
+                    
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" placeholder="Insert your age">
+                </div>
+
+                <div class="commit">
+                    <label for="commit">Description:</label>
+                    <textarea name="" id="commit" placeholder="Insert your descripcion"></textarea>
+                </div>
+
+                <div class="accept">
+                    <label for="check">Do you accept the condiction</label>
+                    <input type="checkbox" id="check">
+                </div>
+
+                <div class="button">
+                    <button>Submit</button>
+                </div>
+
+                <label for="date">Your bith</label><input type="date" id="date">
+
+            </form>
+
+
+
+        </div>
+
+        <div class="form-2">
+
+            <h1>Validation to the Form</h1>
+
+            <form action="">
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name" required pattern="[A-Za-z]+$">
+                </div>
+
+                                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="Age" required min="0" max="100">
+                </div>
+
+                <div>
+                    <label for="codigopostal">Codigo Postal:</label>
+                    <input type="text" id="codigopostal" placeholder="Codigo Postal" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+
+                <div>
+                    <label for="date">Date for reservation:</label>
+                    <input type="date" id="date" placeholder="Reservation" required>
+                </div>
+
+                <div>
+                    <label for="level">Level:</label>
+                    <input type="range" id="level" required>
+                </div>
+                <button>Submit Query</button>
+            </form>
+
+            <div class="check-box">
+
+            <h1>Personalización de checkboxes con CSS</h1>
+            <input type="checkbox" id="checkbox" name="cc" />
+            <label for="checkbox"></label>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+</html>

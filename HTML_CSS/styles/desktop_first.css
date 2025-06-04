@@ -1,0 +1,133 @@
+body {
+    background: url(/HTML_CSS/images/desktop_first/background.png);
+    margin: 0;
+    font-family: arial;
+}
+
+#wrapper {
+    max-width: 980px;
+    margin: 0px auto 0px auto;
+    background: rgba(186, 183, 179, 0.2);
+    position: relative;
+}
+
+header {
+    height: 275px;
+    background: url(/HTML_CSS/images/desktop_first/pablomonteserin.png) no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+header a.logo {
+    background: url(/HTML_CSS/images/desktop_first/logo.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    width: 150px;
+    height: 118px;
+    display: block;
+}
+
+nav {
+    background: #333;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    padding: 20px 0;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    transition: 1s;
+    color: white;
+}
+
+nav a:hover {
+    background: grey;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+article p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.promo_container {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+.promo {
+    width: 33%;
+    display: inline-block;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.promo div {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.img_logo {
+    margin-top: 18.72px;
+    width: 35%;
+    height: 79px;
+    background: red;
+    background: url(/HTML_CSS/images/desktop_first/logo_medium.png) no-repeat;
+}
+
+.content {
+    width: 65%;
+    text-align: left;
+}
+
+footer {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 700px){
+    header{
+        background: url(/HTML_CSS/images/desktop_first/pablomonteserin_small.png) no-repeat;
+        height: 75px;
+        a.logo{
+            top: 40px;
+            height: 50px;
+            width: 40px;
+            background-image: url(/HTML_CSS/images/desktop_first/logo_small.png);
+        }
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promo_container{
+        .promo{
+            display: block;
+            margin: auto;
+        }
+    }
+
+}
