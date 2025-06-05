@@ -9,9 +9,8 @@
 
 .grip{
     display: grid;
-    grid-template-columns: repeat(4,200px);
-    gap: 20px;
-    margin: 40px;
+    grid-template-columns: repeat(4,40px);
+    gap: 100px;
     .box{
         p{
             width: 150px;

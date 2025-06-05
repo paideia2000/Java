@@ -114,7 +114,7 @@ footer {
         a.logo{
             top: 40px;
             height: 50px;
-            width: 40px;
+            
             background-image: url(/HTML_CSS/images/desktop_first/logo_small.png);
         }
     }
@@ -127,6 +127,9 @@ footer {
         .promo{
             display: block;
             margin: auto;
+        }
+        .img_logo{
+            width: 100px;
         }
     }
 

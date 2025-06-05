@@ -1,12 +1,15 @@
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Main{
-
     public static void main(String[] args){
-        char test_1 = 'a';
-        char test_2 = 'A';
 
-        System.out.println(test_1 < test_2);
+        String isPremiun = "notpremiun";
+
+        switch (isPremiun) {
+
+            case "premiun": System.out.println("You're premiun"); break;
+
+            case "notpremiun": System.out.println("You aren't premiun"); break;
+        }
+
     }
 }
+

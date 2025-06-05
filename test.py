@@ -1,33 +1,39 @@
-import re
-
-
-try:
+def toUpperCase(alpha_characters: dict, string: str) -> None:
+    """ convert one string to upper """
     
-    full_name = input("\nEnter your full name, follow this format (rene medina perez): ")
+    new_string = [];
     
-    if re.fullmatch(r'[A-Za-z ]+', full_name):
+    if alpha_characters and isinstance(alpha_characters, dict):
         
-        list_split = [word for word in full_name.split()]
-        new_lis = []
+        if string and isinstance(string, str):
+            
+            for c in string:
+                
+                if c in alpha_characters.keys():
+                    
+                    new_string.append(alpha_characters[c])
+            
+        else:
+            raise ValueError("The content isin't string.")
         
-        
-        for word in list_split:
-            for w in word:
-                if w[0].islower():
-                    new_lis.append(word[0].upper() + word[1:])
-                    break
-                else:
-                    continue
-        
-        
-        print(" ".join(new_lis))
-
     else:
+        print("bad")
         
-        raise ValueError("Check teh fiel.")
+    return "".join(new_string)
+
+
+def main():
     
+    indice_lower: list = [e for e in range(97, 123)]
+    indice_upper: list = [e for e in range(65, 91)]
+    alpha_characters = {chr(lower): chr(upper) for lower, upper in zip(indice_lower,indice_upper)}
+    alpha_characters.update({" " : " "})
+
     
+    string: str = "renecito el duremio"
+    
+    print(toUpperCase(alpha_characters, string))
     
 
-except ValueError as vl:
-    print("An Error Ocurrer: {}".format(vl))
+if __name__=="__main__":
+    main()
