@@ -1,15 +1,15 @@
-public class Main{
+
+
+public class Main {
     public static void main(String[] args){
 
-        String isPremiun = "notpremiun";
+    String phrase = "renecito el duro";
 
-        switch (isPremiun) {
-
-            case "premiun": System.out.println("You're premiun"); break;
-
-            case "notpremiun": System.out.println("You aren't premiun"); break;
-        }
-
+        System.out.println(phrase.length());
+        System.out.println(phrase.indexOf("r"));
+        System.out.println(phrase.lastIndexOf("r"));
+        System.out.println(phrase.charAt(0));
+        System.out.println(phrase.substring(0,5));
+        System.out.println(phrase.contains("d"));
     }
 }
-
