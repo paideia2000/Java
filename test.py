@@ -16,10 +16,12 @@ def toUpperCase(alpha_characters: dict, string: str) -> None:
         else:
             raise ValueError("The content isin't string.")
         
+        return "".join(new_string)
+        
     else:
         print("bad")
         
-    return "".join(new_string)
+    
 
 
 def main():
